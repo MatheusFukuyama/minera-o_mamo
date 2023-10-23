@@ -13,8 +13,6 @@ from sklearn.svm import SVC
 from imblearn.over_sampling import RandomOverSampler, SMOTE
 from sklearn.model_selection import train_test_split, cross_val_score, cross_val_predict
 
-
-
 def plot_confusion_matrix(cm, classes,
                           normalize=False,
                           title='Confusion matrix',

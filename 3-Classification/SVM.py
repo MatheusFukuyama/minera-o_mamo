@@ -46,25 +46,8 @@ def plot_confusion_matrix(cm, classes,
     plt.tight_layout()
     plt.ylabel('True label')
     plt.xlabel('Predicted label')    
-
-def load_dataset(dataset='cancer'):        
-    if dataset == 'iris':
-        # Load iris data and store in dataframe
-        iris = datasets.load_iris()
-        names = iris.target_names
-        df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
-        df['target'] = iris.target
-    elif dataset == 'cancer':
-        # Load cancer data and store in dataframe
-        cancer = datasets.load_breast_cancer()
-        names = cancer.target_names
-        df = pd.DataFrame(data=cancer.data, columns=cancer.feature_names)
-        df['target'] = cancer.target
-    
-    print(df.head())
-    return names, df
-
-
+     
+ 
 def main():
     #load dataset
     names = ['Class', 'age', 'menopause', 'tumor-size', 'inv-nodes', 'node-caps', 'deg-malig', 'breast', 'breast-quad',
